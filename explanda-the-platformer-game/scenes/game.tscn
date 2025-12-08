@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=4 uid="uid://dwg6lv4plq8gb"]
+[gd_scene load_steps=5 format=3 uid="uid://dwg6lv4plq8gb"]
 
 [ext_resource type="PackedScene" uid="uid://cckocpdpqgfyp" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://d0q2g65ahgok" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
@@ -172,19 +172,15 @@ sources/0 = SubResource("TileSetAtlasSource_lnu2h")
 [node name="Game" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_uwrxv")]
-position = Vector2(144, 88)
+position = Vector2(160, 97)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -7)
-zoom = Vector2(4, 4)
+zoom = Vector2(2, 2)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(0, 1)
 rotation = -1.2546778e-05
 tile_set = SubResource("TileSet_lbhrr")
 format = 2
-
-[node name="Layer0" type="TileMapLayer" parent="TileMap"]
-use_parent_material = true
-tile_map_data = PackedByteArray("AAABAAUAAAAAAAAAAAABAAYAAAAAAAEAAAACAAUAAAAAAAAAAAACAAYAAAAAAAEAAAADAAQAAAAAAAAAAAADAAUAAAAAAAEAAAADAAYAAAABAAEAAAAEAAUAAAAAAAEAAAAEAAYAAAABAAEAAAAFAAUAAAAAAAAAAAAFAAYAAAAAAAEAAAAKAAIAAAAEAAAAAAALAAIAAAAEAAAAAAAMAAIAAAAEAAAAAAAMAAMAAAAEAAEAAAANAAIAAAAEAAEAAAANAAMAAAAFAAEAAAAOAAMAAAAEAAAAAAAPAAMAAAAEAAAAAAAPAAQAAAAEAAEAAAAQAAQAAAAKAAAAAAACAAcAAAAAAAEAAAADAAcAAAABAAAAAAAEAAQAAAAAAAAAAAAEAAcAAAAAAAEAAAAFAAcAAAAAAAEAAAAGAAYAAAAAAAAAAAAGAAcAAAABAAAAAAAHAAMAAAAEAAAAAAAHAAYAAAAAAAAAAAAHAAcAAAAAAAEAAAAIAAYAAAAAAAAAAAAOAAQAAAAEAAEAAAAJAAYAAAAAAAAAAAAIAAcAAAAAAAEAAAA=")
-tile_set = SubResource("TileSet_lbhrr")
+layer_0/tile_data = PackedInt32Array(393225, 0, 0, 393226, 0, 0, 327694, 0, 0, 327695, 0, 0, 393224, 0, 0, 393227, 0, 0)
